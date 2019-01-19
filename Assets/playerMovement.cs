@@ -6,11 +6,11 @@ using System;
 public class playerMovement : MonoBehaviour
 {
 
-    public float speed = 2;
-    public float maxspeed = 10f;
-    private float Angle = 0f;
-    private Vector3 moving;
-    private Rigidbody CarRigidbody;
+    protected float speed = 2;
+    protected float maxspeed = 10f;
+    protected float Angle = 0f;
+    protected Vector3 moving;
+    protected Rigidbody CarRigidbody;
     void Start()
     {
         CarRigidbody = GetComponent<Rigidbody>();
@@ -59,7 +59,7 @@ public class playerMovement : MonoBehaviour
         if (VerticalMove > 0.1f )
         {
             CarRigidbody.AddForce(new Vector3(transform.forward.x, 0, transform.forward.z) * 10 * speed);
-
+            
         }
         if (VerticalMove < -0.1f)
         {
@@ -76,7 +76,8 @@ public class playerMovement : MonoBehaviour
         //CarRigidbody.AddRelativeTorque(new Vector3(0,Angle,0));
         //CarRigidbody.velocity = Quaternion.Euler(0, Angle/10f, 0) * CarRigidbody.velocity;
         //(Input.GetAxis("Horizontal") * rotateSpeed
-        transform.Rotate(0,Angle/200,0);
+        transform.Rotate(0, Angle * Mathf.Abs(VerticalMove*0.1f), 0);
+        
     }
 
 }
