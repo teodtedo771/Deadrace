@@ -62,9 +62,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CarSwitcher.cs" />
+    <Compile Include="Assets\Scripts\DetectionTrigger.cs" />
     <Compile Include="Assets\Scripts\DriftCamera.cs" />
     <Compile Include="Assets\Scripts\EasySuspension.cs" />
+    <Compile Include="Assets\Scripts\General\CameraBumper.cs" />
+    <Compile Include="Assets\Scripts\General\CameraControl.cs" />
+    <Compile Include="Assets\Scripts\General\LimitedFloat.cs" />
     <Compile Include="Assets\Scripts\GraphOverlay.cs" />
+    <Compile Include="Assets\Scripts\SmoothCameraAdvanced.cs" />
+    <Compile Include="Assets\Scripts\UnityObject.cs" />
     <Compile Include="Assets\Scripts\WheelDrive.cs" />
     <None Include="Assets\Fonts\LICENSE.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">

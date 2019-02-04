@@ -337,6 +337,8 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -401,13 +403,102 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0.05, y: 3.33, z: -5.55}
+  m_LocalRotation: {x: 0.24956264, y: -0.25601476, z: 0.068598986, w: 0.9313803}
+  m_LocalPosition: {x: 106.259766, y: 4.4, z: 56.735325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 512451052}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb0671cd55187c47b7dab9dbebb028e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 512451052}
+  distance: 7
+  height: 2.5
+  damping: 5
+  smoothRotation: 1
+  followBehind: 1
+  rotationDamping: 10
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844331a8722919b47a6671028b468502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 512451052}
+  bumper:
+    collisionType: 1
+    distanceCheck: 2.5
+    newCameraHeight: 1
+    offset: {x: 0, y: 0, z: 0}
+  controls:
+  - target: 1
+    stepSize: 2
+    mouseCode: 1
+    keyCode: 0
+  - target: 0
+    stepSize: 1
+    mouseCode: 1
+    keyCode: 0
+  - target: 3
+    stepSize: 0.5
+    mouseCode: 1
+    keyCode: 0
+  - target: 2
+    stepSize: -1
+    mouseCode: 0
+    keyCode: 276
+  - target: 2
+    stepSize: 1
+    mouseCode: 0
+    keyCode: 275
+  lookAtOffset: {x: 0, y: 0, z: 0}
+  rotationType: 2
+  translationType: 2
+  distance:
+    min: 1
+    max: 10
+    current: 3
+  height:
+    min: 1
+    max: 5
+    current: 1
+  panX:
+    min: -1
+    max: 1
+    current: 0
+  panY:
+    min: 0
+    max: 2
+    current: 0
+  damping: 5
+  rotationDamping: 10
 --- !u!1 &1001921692
 GameObject:
   m_ObjectHideFlags: 0
