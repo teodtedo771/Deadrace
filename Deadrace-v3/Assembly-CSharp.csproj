@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\SmoothCameraAdvanced.cs" />
     <Compile Include="Assets\Scripts\UnityObject.cs" />
     <Compile Include="Assets\Scripts\WheelDrive.cs" />
+    <None Include="Assets\AutumnRing\Java.txt" />
     <None Include="Assets\Fonts\LICENSE.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Git/Deadrace/Deadrace-v3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

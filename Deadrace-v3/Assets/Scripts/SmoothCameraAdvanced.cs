@@ -165,9 +165,13 @@ class SmoothCameraAdvanced : MonoBehaviour
 
     void Reset()
     {
+        //scrollwheel distance from the car
         Controls.Add(new CameraControl(TargetEnum.Distance, MouseCodeEnum.ScrollWheel, 2));
         Controls.Add(new CameraControl(TargetEnum.Height, MouseCodeEnum.ScrollWheel, 1));
         Controls.Add(new CameraControl(TargetEnum.PanY, MouseCodeEnum.ScrollWheel, 0.5f));
+
+        Controls.Add(new CameraControl(TargetEnum.PanX, KeyCode.A, -1));
+        Controls.Add(new CameraControl(TargetEnum.PanX, KeyCode.D, 1));
         Controls.Add(new CameraControl(TargetEnum.PanX, KeyCode.LeftArrow, -1));
         Controls.Add(new CameraControl(TargetEnum.PanX, KeyCode.RightArrow, 1));
     }
